@@ -1,0 +1,38 @@
+{
+  "name": "vsts-git-tasks",
+  "version": "0.1.0",
+  "description": "Tasks for interacting with Git repositories in Visual Studio Team Services.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iozag/vsts-git-tasks"
+  },
+  "keywords": [
+    "VSO",
+    "build",
+    "tasks",
+    "sharepoint"
+  ],
+  "author": "IOZ AG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iozag/vsts-git-tasks/issues"
+  },
+  "homepage": "https://github.com/iozag/vsts-git-tasks",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-typescript": "2.6.0",
+    "gulp-util": "^3.0.4",
+    "shelljs": "^0.3.0",
+    "tfx-cli": "^0.3.6",
+    "through2": "^0.6.3",
+    "validator": "^3.33.0"
+  },
+  "dependencies": {
+    "q": "^1.2.0"
+  }
+}

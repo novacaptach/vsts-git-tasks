@@ -1,0 +1,60 @@
+{
+    "manifestVersion": 1,
+    "id": "vsts-git-build-tasks",
+    "name": "Git Build Tools",
+    "version": "0.0.1",
+    "publisher": "ioz",
+    "public": false,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tasks for interacting with Git repositories.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "_build/Tasks/AuthenticateGitRemoteAccess"
+        }
+    ],
+    "content": {
+        "details":
+        {
+            "path": "extension-details.md"
+        }
+    },    
+    "contributions": [
+        {
+            "id": "sharepoint-addin-patching",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "_build/Tasks/AuthenticateGitRemoteAccess"
+            }
+        }
+    ],
+    "links": {
+        "home": {
+            "uri": "http://ioz.ch"
+        },
+        "getstarted": {
+            "uri": "https://github.com/iozag/vsts-git-tasks/wiki"
+        },
+        "issues": {
+            "uri": "https://github.com/iozag/vsts-git-tasks/issues"
+        },
+        "license": {
+            "uri": "https://github.com/iozag/vsts-git-tasks/blob/master/LICENSE"
+        },
+        "repository": {
+            "uri": "https://github.com/iozag/vsts-git-tasks"
+        }
+    }    
+}
