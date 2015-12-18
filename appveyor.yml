@@ -18,6 +18,6 @@ test_script:
   - cmd: 7z a "AuthenticateGitRemoteAccess_%GitVersion_NuGetVersion%.zip" -r .\_build\Tasks\AuthenticateGitRemoteAccess\*.*
   - cmd: appveyor PushArtifact "AuthenticateGitRemoteAccess_%GitVersion_NuGetVersion%.zip"
   
-  - cmd: appveyor PushArtifact ".\_build\Extensions\ioz.vsts-git-tasks-%GitVersion_MajorMinorPatch%.vsix"
+  - cmd: appveyor PushArtifact ".\_build\Extensions\ioz.vsts-git-build-tasks-%GitVersion_MajorMinorPatch%.vsix"
   
 build: off
