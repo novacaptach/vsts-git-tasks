@@ -40,7 +40,8 @@ if ([string]::IsNullOrEmpty($token) -eq $true)
 #$newRemoteUrl = $currentRemoteUrl.replace("https://", "https://" + $token + "@")
 $currentRemoteUri = New-Object System.Uri $currentRemoteUrl
 $newRemoteUrlBuilder = New-Object System.UriBuilder($currentRemoteUri)
-$newRemoteUrlBuilder.UserName = $token
+$newRemoteUrlBuilder.UserName = "OAuth" 
+$newRemoteUrlBuilder.Password = $token
 git remote set-url $remoteName $newRemoteUrlBuilder.ToString()
 Write-Verbose "Updated remote for origin is $newRemoteUrlBuilder.ToString()"
 
