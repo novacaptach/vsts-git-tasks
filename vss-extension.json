@@ -22,7 +22,7 @@
             "path": "_build/Tasks/EnableGitRemoteAccess"
         },
         {
-            "path": "_build/Tasks/RestoreGitRemoteAccess"
+            "path": "_build/Tasks/RestoreGitRemote"
         }
     ],
     "content": {
@@ -49,7 +49,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "_build/Tasks/RestoreGitRemoteAccess"
+                "name": "_build/Tasks/RestoreGitRemote"
             }
         }
     ],

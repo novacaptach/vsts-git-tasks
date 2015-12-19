@@ -1,8 +1,8 @@
 {
     "id":"ad5ee7de-41ec-42c8-84d0-8359bc39a4f5",
-    "name":"RestoreGitRemoteAccess",
-    "friendlyName": "Restore Git Remote Access",
-    "description": "Restores the Git repository on the agent to the original URL as set by the Visual Studio Team Services agent.",
+    "name":"RestoreGitRemote",
+    "friendlyName": "Restore Git Remote",
+    "description": "Restores a remote of the Git repository on the agent to the original URL as set by the Visual Studio Team Services agent.",
     "helpMarkDown": "[More Information](https://github.com/iozag/vsts-git-tasks)",
     "category": "Utility",
     "visibility": [
@@ -29,10 +29,10 @@
             "helpMarkDown": "Name of the remote which should be restored."
         }
     ],    
-    "instanceNameFormat": "Restore Git remote access",
+    "instanceNameFormat": "Restore Git remote",
     "execution": {
         "PowerShell": {
-            "target": "$(currentDirectory)\\RestoreGitRemoteAccess.ps1",
+            "target": "$(currentDirectory)\\RestoreGitRemote.ps1",
             "argumentFormat": "",
             "workingDirectory": "$(Build.SourcesDirectory)"
         }
