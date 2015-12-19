@@ -1,5 +1,5 @@
 {
-    "id":"ad5ee7de-41ec-42c8-84d0-8359bc39a4f5",
+    "id":"1cee85e7-7b58-4145-bdec-8ee70a1d29fe",
     "name":"RestoreGitRemote",
     "friendlyName": "Restore Git Remote",
     "description": "Restores a remote of the Git repository on the agent to the original URL as set by the Visual Studio Team Services agent.",
