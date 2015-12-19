@@ -10,13 +10,13 @@ install:
 test_script:
   - ps: gitversion /l console /output buildserver
 
-  - ps: .\Deployment\Update-TaskVersion.ps1 .\Tasks\AuthenticateGitRemoteAccess\task.json $env:GitVersion_Major $env:GitVersion_Minor $env:GitVersion_Patch
+  - ps: .\Deployment\Update-TaskVersion.ps1 .\Tasks\EnableGitRemoteAccess\task.json $env:GitVersion_Major $env:GitVersion_Minor $env:GitVersion_Patch
   - ps: .\Deployment\Update-ExtensionVersion.ps1 .\vss-extension.json $env:GitVersion_MajorMinorPatch
 
   - gulp package
   
-  - cmd: 7z a "AuthenticateGitRemoteAccess_%GitVersion_NuGetVersion%.zip" -r .\_build\Tasks\AuthenticateGitRemoteAccess\*.*
-  - cmd: appveyor PushArtifact "AuthenticateGitRemoteAccess_%GitVersion_NuGetVersion%.zip"
+  - cmd: 7z a "EnableGitRemoteAccess_%GitVersion_NuGetVersion%.zip" -r .\_build\Tasks\EnableGitRemoteAccess\*.*
+  - cmd: appveyor PushArtifact "EnableGitRemoteAccess_%GitVersion_NuGetVersion%.zip"
   
   - cmd: appveyor PushArtifact ".\_build\Extensions\ioz.vsts-git-build-tasks-%GitVersion_MajorMinorPatch%.vsix"
   
