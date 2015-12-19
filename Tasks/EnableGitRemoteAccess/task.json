@@ -1,7 +1,7 @@
 {
     "id":"ad5ee7de-41ec-42c8-84d0-8359bc39a4f5",
-    "name":"AuthenticateGitRemoteAccess",
-    "friendlyName": "Authenticate Git Remote Access",
+    "name":"EnableGitRemoteAccess",
+    "friendlyName": "Enable Git Remote Access",
     "description": "Update the Git repository on the agent to allow access to the origin repository on Visual Studio Team Service.",
     "helpMarkDown": "[More Information](https://github.com/iozag/vsts-git-tasks)",
     "category": "Utility",
@@ -32,7 +32,7 @@
     "instanceNameFormat": "Allow Git remote access",
     "execution": {
         "PowerShell": {
-            "target": "$(currentDirectory)\\AuthenticateGitRemoteAccess.ps1",
+            "target": "$(currentDirectory)\\EnableGitRemoteAccess.ps1",
             "argumentFormat": "",
             "workingDirectory": "$(Build.SourcesDirectory)"
         }

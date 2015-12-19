@@ -2,7 +2,7 @@
 // GENERATED FILE - DO NOT EDIT DIRECTLY
 // *******************************************************
 {
-  "loc.friendlyName": "Authenticate Git Remote Access",
+  "loc.friendlyName": "Enable Git Remote Access",
   "loc.helpMarkDown": "[More Information](https://github.com/iozag/vsts-git-tasks)",
   "loc.description": "Update the Git repository on the agent to allow access to the origin repository on Visual Studio Team Service.",
   "loc.instanceNameFormat": "Allow Git remote access",

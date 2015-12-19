@@ -3,7 +3,7 @@
 // *******************************************************
 {
   "id": "ad5ee7de-41ec-42c8-84d0-8359bc39a4f5",
-  "name": "AuthenticateGitRemoteAccess",
+  "name": "EnableGitRemoteAccess",
   "friendlyName": "ms-resource:loc.friendlyName",
   "description": "ms-resource:loc.description",
   "helpMarkDown": "ms-resource:loc.helpMarkDown",
@@ -35,7 +35,7 @@
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
   "execution": {
     "PowerShell": {
-      "target": "$(currentDirectory)\\AuthenticateGitRemoteAccess.ps1",
+      "target": "$(currentDirectory)\\EnableGitRemoteAccess.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(Build.SourcesDirectory)"
     }
