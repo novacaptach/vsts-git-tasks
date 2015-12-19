@@ -3,7 +3,7 @@ param(
     [string]$remoteName
 )
 
-Write-Verbose "Entering script AuthenticateGitRemoteAccess.ps1"
+Write-Verbose "Entering script EnableGitRemoteAccess.ps1"
 Write-Verbose "Parameter Values"
 foreach($key in $PSBoundParameters.Keys)
 {
@@ -45,4 +45,4 @@ $newRemoteUrlBuilder.Password = $token
 git remote set-url $remoteName $newRemoteUrlBuilder.ToString()
 Write-Verbose "Updated remote for origin is $newRemoteUrlBuilder.ToString()"
 
-Write-Verbose "Leaving script AuthenticateGitRemoteAccess.ps1"
+Write-Verbose "Leaving script EnableGitRemoteAccess.ps1"
