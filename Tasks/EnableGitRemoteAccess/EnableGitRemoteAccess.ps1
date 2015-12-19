@@ -18,7 +18,7 @@ if(!$remoteName)
 # Determine current remote.
 $remoteArg = "remote.$remoteName.url"
 $currentRemoteUrl = git config $remoteArg
-Write-Verbose "Current remote for origin is set to $currentRemoteUrl"
+Write-Verbose "Current remote for $remoteName is set to $currentRemoteUrl"
 
 if ([string]::IsNullOrEmpty($currentRemoteUrl) -eq $true)
 {
@@ -42,6 +42,6 @@ $newRemoteUrlBuilder = New-Object System.UriBuilder($currentRemoteUri)
 $newRemoteUrlBuilder.UserName = "OAuth" 
 $newRemoteUrlBuilder.Password = $token
 git remote set-url $remoteName $newRemoteUrlBuilder.ToString()
-Write-Verbose "Updated remote for origin is $newRemoteUrlBuilder.ToString()"
+Write-Verbose "Updated remote for $remoteName is $newRemoteUrlBuilder.ToString()"
 
 Write-Verbose "Leaving script EnableGitRemoteAccess.ps1"
