@@ -20,6 +20,9 @@
     "files": [
         {
             "path": "_build/Tasks/EnableGitRemoteAccess"
+        },
+        {
+            "path": "_build/Tasks/RestoreGitRemoteAccess"
         }
     ],
     "content": {
@@ -37,6 +40,16 @@
             ],
             "properties": {
                 "name": "_build/Tasks/EnableGitRemoteAccess"
+            }
+        },
+        {
+            "id": "sharepoint-addin-patching",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "_build/Tasks/RestoreGitRemoteAccess"
             }
         }
     ],
