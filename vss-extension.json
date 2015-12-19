@@ -33,7 +33,7 @@
     },    
     "contributions": [
         {
-            "id": "sharepoint-addin-patching",
+            "id": "enable-git-remote-access",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
@@ -43,7 +43,7 @@
             }
         },
         {
-            "id": "sharepoint-addin-patching",
+            "id": "restore-git-remote",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
