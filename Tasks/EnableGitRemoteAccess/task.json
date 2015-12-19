@@ -2,7 +2,7 @@
     "id":"ad5ee7de-41ec-42c8-84d0-8359bc39a4f5",
     "name":"EnableGitRemoteAccess",
     "friendlyName": "Enable Git Remote Access",
-    "description": "Update the Git repository on the agent to allow access to the origin repository on Visual Studio Team Service.",
+    "description": "Update the Git repository on the agent to allow access to the upstream repository on Visual Studio Team Service.",
     "helpMarkDown": "[More Information](https://github.com/iozag/vsts-git-tasks)",
     "category": "Utility",
     "visibility": [
