@@ -37,7 +37,6 @@ if ([string]::IsNullOrEmpty($token) -eq $true)
 }
 
 # Update URL of remote.
-#$newRemoteUrl = $currentRemoteUrl.replace("https://", "https://" + $token + "@")
 $currentRemoteUri = New-Object System.Uri $currentRemoteUrl
 $newRemoteUrlBuilder = New-Object System.UriBuilder($currentRemoteUri)
 $newRemoteUrlBuilder.UserName = "OAuth" 
