@@ -1,0 +1,43 @@
+// *******************************************************
+// GENERATED FILE - DO NOT EDIT DIRECTLY
+// *******************************************************
+{
+  "id": "ad5ee7de-41ec-42c8-84d0-8359bc39a4f5",
+  "name": "RestoreGitRemoteAccess",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Utility",
+  "visibility": [
+    "Build"
+  ],
+  "author": "IOZ AG",
+  "version": {
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 1
+  },
+  "demands": [
+    "msbuild",
+    "visualstudio"
+  ],
+  "minimumAgentVersion": "1.83.0",
+  "inputs": [
+    {
+      "name": "remoteName",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.remoteName",
+      "defaultValue": "origin",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.remoteName"
+    }
+  ],
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\RestoreGitRemoteAccess.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(Build.SourcesDirectory)"
+    }
+  }
+}

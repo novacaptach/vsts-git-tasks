@@ -1,0 +1,11 @@
+// *******************************************************
+// GENERATED FILE - DO NOT EDIT DIRECTLY
+// *******************************************************
+{
+  "loc.friendlyName": "Restore Git Remote Access",
+  "loc.helpMarkDown": "[More Information](https://github.com/iozag/vsts-git-tasks)",
+  "loc.description": "Restores the Git repository on the agent to the original URL as set by the Visual Studio Team Services agent.",
+  "loc.instanceNameFormat": "Restore Git remote access",
+  "loc.input.label.remoteName": "Remote name",
+  "loc.input.help.remoteName": "Name of the remote which should be restored."
+}
