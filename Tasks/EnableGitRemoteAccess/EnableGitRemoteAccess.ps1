@@ -26,7 +26,7 @@ if ([string]::IsNullOrEmpty($currentRemoteUrl) -eq $true)
 }
 
 # Set the current remote URL as context variable so that it can be restored in a later task.
-Write-Host "##vso[task.setvariable variable=IOZ.GitTools.OriginalRemote;]$currentRemoteUrl"
+Write-Host "##vso[task.setvariable variable=IOZ.GitTools.OriginalRemote.$remoteName;]$currentRemoteUrl"
 
 # Read OAuth token.
 $token = $env:SYSTEM_ACCESSTOKEN
