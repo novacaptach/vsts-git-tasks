@@ -2,9 +2,9 @@
     "manifestVersion": 1,
     "id": "vsts-git-build-tasks",
     "name": "Git Build Tools",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "ioz",
-    "public": false,
+    "public": true,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
