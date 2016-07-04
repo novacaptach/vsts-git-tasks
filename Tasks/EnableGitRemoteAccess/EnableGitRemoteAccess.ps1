@@ -28,20 +28,17 @@ if ([string]::IsNullOrEmpty($currentRemoteUrl) -eq $true)
 # Set the current remote URL as context variable so that it can be restored in a later task.
 Write-Host "##vso[task.setvariable variable=IOZ.GitTools.OriginalRemote.$remoteName;]$currentRemoteUrl"
 
-# Read OAuth token.
-$token = $env:SYSTEM_ACCESSTOKEN
-
-if ([string]::IsNullOrEmpty($token) -eq $true)
+if (!($Env:SYSTEM_ACCESSTOKEN))
 {
     throw ("OAuth token not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition.")
 }
 
 # Update URL of remote.
-$currentRemoteUri = New-Object System.Uri $currentRemoteUrl
-$newRemoteUrlBuilder = New-Object System.UriBuilder($currentRemoteUri)
-$newRemoteUrlBuilder.UserName = "OAuth" 
-$newRemoteUrlBuilder.Password = $token
-git remote set-url $remoteName $newRemoteUrlBuilder.ToString()
-Write-Verbose "Updated remote for $remoteName is $newRemoteUrlBuilder.ToString()"
+$newRemoteUrlBuilder = New-Object System.UriBuilder (git config remote.$remoteName.url)
+$newRemoteUrlBuilder.UserName = "OAuth"
+$newRemoteUrlBuilder.Password = $Env:SYSTEM_ACCESSTOKEN
+git remote set-url origin $newRemoteUrlBuilder
+
+Write-Verbose "Updated remote for $remoteName is $newRemoteUrlBuilder"
 
 Write-Verbose "Leaving script EnableGitRemoteAccess.ps1"
