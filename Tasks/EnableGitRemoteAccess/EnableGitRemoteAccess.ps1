@@ -34,10 +34,10 @@ if (!($Env:SYSTEM_ACCESSTOKEN))
 }
 
 # Update URL of remote.
-$newRemoteUrlBuilder = New-Object System.UriBuilder (git config remote.$remoteName.url)
+$newRemoteUrlBuilder = New-Object System.UriBuilder ($currentRemoteUrl)
 $newRemoteUrlBuilder.UserName = "OAuth"
 $newRemoteUrlBuilder.Password = $Env:SYSTEM_ACCESSTOKEN
-git remote set-url origin $newRemoteUrlBuilder
+git remote set-url $remoteName $newRemoteUrlBuilder
 
 Write-Verbose "Updated remote for $remoteName is $newRemoteUrlBuilder"
 
