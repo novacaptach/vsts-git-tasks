@@ -55,19 +55,19 @@
     ],
     "links": {
         "home": {
-            "uri": "http://ioz.ch"
+            "uri": "http://argusnet.ch"
         },
         "getstarted": {
-            "uri": "https://github.com/iozag/vsts-git-tasks/wiki"
+            "uri": "https://github.com/argusnetch/vsts-git-tasks/wiki"
         },
         "issues": {
-            "uri": "https://github.com/iozag/vsts-git-tasks/issues"
+            "uri": "https://github.com/argusnetch/vsts-git-tasks/issues"
         },
         "license": {
-            "uri": "https://github.com/iozag/vsts-git-tasks/blob/master/LICENSE"
+            "uri": "https://github.com/argusnetch/vsts-git-tasks/blob/master/LICENSE"
         },
         "repository": {
-            "uri": "https://github.com/iozag/vsts-git-tasks"
+            "uri": "https://github.com/argusnetch/vsts-git-tasks"
         }
     }    
 }
