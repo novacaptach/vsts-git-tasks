@@ -10,9 +10,9 @@
                   ],
     "author": "IOZ AG",
     "version": {
-        "Major": 0,
+        "Major": 1,
         "Minor": 0,
-        "Patch": 1
+        "Patch": 0
     },
     "demands": [
         "msbuild",
@@ -31,10 +31,8 @@
     ],    
     "instanceNameFormat": "Allow Git remote access",
     "execution": {
-        "PowerShell": {
-            "target": "$(currentDirectory)\\EnableGitRemoteAccess.ps1",
-            "argumentFormat": "",
-            "workingDirectory": "$(Build.SourcesDirectory)"
+        "PowerShell3": {
+            "target": "EnableGitRemoteAccess.ps1"
         }
     }
 }
